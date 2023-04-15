@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.8.2.min.js"></script>
+
+<script>
+  $(document).ready(function(e) 
+	{
+	  $("#login").click(function(e) 
+				{
+		            $("#log").css("display","block");
+					$("#layer").css("display","block");
+		        });
+				$("#cr").click(function(e) 
+				{
+		            $("#log").css("display","none");
+					$("#layer").css("display","none");
+		        });
+	});
+  </script>
+<style>#block1
+ {
+Width:310px;
+Height:250px;
+Background-color:red;float:left;
+}
+
+#block2
+{
+Width:630px;
+Height:250px;
+Background-color:green;margin-left:05px;float:left;
+}
+
+#block3
+{
+Width:310px;
+Height:250px;
+Background-color:purple;margin-left:05px;float:left;
+}
+
+#block4
+{
+Width:1260px;
+Height:70px;
+Background-color:orange;margin-top:00px;float:left;
+}
+
+#home
+{
+width:70px;
+height:20px;
+position:absolute;
+border:1px black solid;
+margin-left:320px;
+padding:10px;
+margin-top:11px;	
+}
+
+#login
+{
+width:70px;
+height:20px;
+position:absolute;
+border:1px black solid;
+margin-left:567px;
+padding:10px;
+margin-top:11px;
+}
+
+#signup
+{
+width:70px;
+height:20px;
+position:absolute;
+border:1px black solid;
+margin-left:820px;
+padding:10px;
+margin-top:11px;
+}
+
+#fp
+{
+width:70px;
+height:20px;
+position:absolute;
+border:1px black solid;
+margin-left:1070px;
+padding:10px;
+margin-top:11px;
+}
+.laye
+{ 
+		width:100%; height:800px; 
+		background-color:#000;
+		position:absolute;
+		display:none;
+		opacity:.5;
+	  }	 
+.win
+{ 
+	height:auto; 
+	width:auto;
+	position:absolute;
+	margin-left:500px;
+	 margin-top:260px;  
+	border:1px blue solid; 
+	display:none;
+}
+.title1
+{ 
+		height:20px; width:auto;
+	 	border:1px blue solid; 
+ 		background-color:#CC6600;
+}
+.cross
+{	
+	height:20px; width:20px;
+	float:right;
+	 background-size:contain; 
+	 background-image:url(pics/close-btn.png);
+	 cursor:pointer;
+}
+#tb
+{
+	color:#F00;
+	font-weight:bold;
+	font-style:normal;
+	font-size:24px;
+}
+.button
+{
+	width:150px;
+	height:30px;
+	
+}
+*
+{
+	margin:0px;
+}
+	  
+</style>
+
+<meta charset="ISO-8859-1">
+<title> task one </title>
+</head>
+<body>
+<div id="layer" class="laye">
+<center>
+<div id="log" class="win">
+
+             <div id="t1" class="title1">
+                	<div id="cr" class="cross">
+                    </div>
+                 </div>
+            	<form id="frm">
+                <table border="1" id="tb">
+                    <tr>
+                    <td>User Id:</td>
+                    <td><input type="text" name="text" id="text"></td>
+                    </tr>
+                    <tr>
+                    <td>Password:</td>
+                    <td><input type="text" name="pwd" id="pwd"></td>
+                    </tr>
+                    <tr>
+                    <td><input type="button" name="lin" id="lin" value="Log In" class="button" style="cursor:pointer;"></td>
+                    <td><input type="button" name="close" id="close" value="Close" class="button" style="cursor:pointer;"></td>
+                    </tr>
+                    </table>
+                </form>
+            </div>
+</center>
+ </div>    
+
+
+<div id= "block1"></div>
+<div id= "block2"></div>
+<div id= "block3"></div>
+<div id= "block4">
+
+<div id="home"> home </div>
+<div id="login"> login </div>
+<div id="signup"> sign up </div>
+<div id="fp"> forgot password </div>
+</div>
+
+</body>
+</html>
